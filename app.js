@@ -4,7 +4,7 @@ function pesquisar(){
     let campoPesquisa = document.getElementById('campo-pesquisa').value
 
     if (campoPesquisa == '') {
-        section.innerHTML = 'Nada encontrado! Tente novamente!'
+        section.innerHTML = 'Nada encontrado! Digite o nome do seu personagem!'
         return
     }
 
@@ -14,14 +14,16 @@ function pesquisar(){
     let heroi = '';
     let editora = '';
     let descricao = '';
+    let tags = '';
 
     for (let hero of dados) {
         heroi = hero.heroi.toLowerCase()
         editora = hero.editora.toLowerCase()
         descricao = hero.descricao.toLowerCase()
+        tags = hero.tags.toLocaleLowerCase()
         if (heroi.includes(campoPesquisa) || 
         editora.includes(campoPesquisa) ||
-        descricao.includes(campoPesquisa)  ) 
+        descricao.includes(campoPesquisa) || tags.includes(campoPesquisa)) 
         {
         resultado += `
         <div class="item-resultado">
@@ -39,7 +41,7 @@ function pesquisar(){
     }
 
     if (!resultado){
-        resultado = 'Personagem não encontrado! Tente novamente!'
+        resultado = 'Desculpe, personagem não encontrado! Vamos acrescentar o seu personagem em nossa próxima atualização!'
     }
 
     section.innerHTML = resultado
