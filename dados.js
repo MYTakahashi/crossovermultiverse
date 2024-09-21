@@ -1,93 +1,219 @@
 let dados = [
         {
-          heroi: 'Wolverine',
-          editora: 'Marvel',
-          descricao: 'Wolverine, também conhecido como Logan, é um dos personagens mais icônicos e populares da Marvel Comics. Com um passado misterioso e torturado, Logan é um mutante com um fator de cura acelerado que o torna praticamente imortal. Suas garras de adamantium, um metal quase indestrutível, e seus sentidos aguçados fazem dele um combatente formidável. Ao longo dos anos, Wolverine já fez parte de diversas equipes, como os X-Men, a Tropa Alfa e os Vingadores, sempre pronto para proteger os inocentes e enfrentar os vilões mais perigosos do Universo Marvel. Sua personalidade complexa, marcada por uma dualidade entre a ferocidade e a lealdade, o torna um personagem fascinante e inesquecível.',
-          link: 'https://pt.wikipedia.org/wiki/Wolverine',
-          tags: 'heroi, herói, herois, heróis'
-        },
-        {
-          heroi: 'Deadpool',
+          heroi: 'Deadpool (Deadpool)',
           editora: 'Marvel',
           descricao: 'Deadpool, o mercenário tagarela com poderes regenerativos, é conhecido por seu humor ácido e quarto quebrando a quarta parede. Com um passado obscuro e uma habilidade única de curar quase qualquer ferimento, Deadpool se tornou um dos personagens mais populares da Marvel, tanto nos quadrinhos quanto nos filmes.',
-          link: 'https://pt.wikipedia.org/wiki/Deadpool',
-          tags: 'heroi, herói, herois, heróis'
+          tags: 'heroi, cura, imortal, engraçado, violento'
         },
         {
-          heroi: 'Batman',
-          editora: 'DC Comics',
-          descricao: 'Batman, o Cavaleiro das Trevas, é um vigilante mascarado que luta contra o crime em Gotham City. Sem superpoderes, Batman utiliza sua inteligência, habilidades de detetive e tecnologia avançada para combater o crime organizado e outros vilões. Sua história trágica e seu código moral rígido o tornam um dos personagens mais complexos e icônicos dos quadrinhos.',
-          link: 'https://pt.wikipedia.org/wiki/Batman',
-          tags:'cavaleiro, trevas, bruce, waine'
-        },
-        {
-          heroi: 'Mulher Maravilha',
-          editora: 'DC Comics',
-          descricao: 'Mulher Maravilha, uma princesa amazona com super força, velocidade e habilidades de combate, é um símbolo de justiça e igualdade. Criada por William Moulton Marston, a Mulher Maravilha é uma das heroínas mais antigas e populares dos quadrinhos, e sua mensagem de empoderamento feminino continua relevante até hoje.',
-          link: 'https://pt.wikipedia.org/wiki/Mulher-Maravilha',
-          tags:'heroina,diana,jato'
-        },       
-        {
-          heroi: 'Homem Aranha',
+          heroi: 'Wolverine (Logan)',
           editora: 'Marvel',
-          descricao: 'O Homem-Aranha é um dos personagens mais populares de toda a ficção e o super-herói mais bem-sucedido comercialmente. Como mascote da Marvel, já apareceu em inúmeras mídias, incluindo várias séries de televisão animadas e ao vivo, jogos eletrônicos e uma série de filmes em que foi interpretado por Tobey Maguire (2002–2007), Andrew Garfield (2012–2014) e Tom Holland no Universo Cinematográfico Marvel (começando em 2016 com Capitão América: Guerra Civil). Geralmente, o Homem-Aranha é classificado como um dos maiores personagens de quadrinhos e o carro-chefe da Marvel Comics.',
-          link: 'https://pt.wikipedia.org/wiki/Homem-Aranha',
-          tags: 'super-herói, adolescente, teias, spiderman, spider man'
+          descricao: 'Wolverine, também conhecido como Logan, é um mutante com um fator de cura acelerado que o torna praticamente imortal. Suas garras de adamantium, um metal quase indestrutível, e seus sentidos aguçados fazem dele um combatente formidável. Ele já fez parte de diversas equipes, como os X-Men, a Tropa Alfa e os Vingadores, e seu principal inimigo é o Dentes de Sabre.',
+          tags: 'heroi, x-men, adamantium, cura, imortal, garras, ferocidade, lealdade, misterioso'
         },
         {
-          heroi: 'Venom',
+          heroi: 'Homem-Aranha (Spider-Man)',
           editora: 'Marvel',
-          descricao: 'Venom é um personagem ficcional das histórias em quadrinhos na série do Homem-Aranha do Universo Marvel, publicadas pela Marvel Comics. Apesar de já ter tido minisséries próprias, a maioria de suas aparições é como inimigo do personagem Homem-Aranha. Apesar de ter seu lado como vilão, Venom também é um anti-herói. Seu hospedeiro é Eddie Brock. Venom é um simbionte alienígena formado a partir de um líquido, material orgânico de espessura. A característica marcante de Venom, além do uniforme negro, é a desproporcional e assustadora mandíbula, desenhada no traço de Todd MacFarlane. Antes de fundir-se ao simbionte e tornar-se Venom, Eddie Brock era repórter do jornal O Clarim Diário, e foi demitido por Homem-Aranha.',
-          link: 'https://pt.wikipedia.org/wiki/Venom_(Marvel_Comics)',
-          tags: 'simbionte, vilão, anti-herói'
+          descricao: 'Homem-Aranha, também conhecido como Peter Parker, ganhou seus poderes aracnídeos após ser picado por uma aranha radioativa. Ele possui força, agilidade, sentidos aprimorados e a capacidade de aderir a superfícies. Ele é membro dos Vingadores e seu principal inimigo é o Duende Verde.',
+          tags: 'heroi, vingadores, aranha, radioativo, força, agilidade, sentidos, teias, responsabilidade'
         },
         {
-          heroi: 'Dr. Doom',
+          heroi: 'Batman (Batman)',
+          editora: 'DC Comics',
+          descricao: 'Batman, também conhecido como Bruce Wayne, é um vigilante que usa tecnologia e inteligência para combater o crime em Gotham City. Ele não possui superpoderes, mas é um mestre em artes marciais, detetive e estrategista. Seus principais inimigos são o Coringa, o Charada e o Pinguim.',
+          tags: 'heroi, vigilante, tecnologia, inteligência, artes marciais, detetive, estrategista, justiceiro, coringa'
+        },
+        {
+          heroi: 'Mulher-Maravilha (Wonder Woman)',
+          editora: 'DC Comics',
+          descricao: 'Mulher-Maravilha, também conhecida como Diana Prince, é uma princesa amazona com superforça, velocidade, resistência e voo. Ela é membro da Liga da Justiça e sua principal inimiga é Ares, o Deus da Guerra.',
+          tags: 'heroi, liga-da-justica, amazona, força, velocidade, resistencia, voo, escudo, laço'
+        },
+        {
+          heroi: 'Super Homem (Superman)',
+          editora: 'DC Comics',
+          descricao: 'Superman, também conhecido como Clark Kent, é um alienígena do planeta Krypton com superforça, voo, visão de calor, super-respiração, visão de raio-x e super-audição. Ele é membro da Liga da Justiça e seu principal inimigo é Lex Luthor.',
+          tags: 'heroi, liga-da-justica, kryptoniano, força, voo, calor, respiração, raio-x, audição, justiça'
+        },
+        {
+          heroi: 'Homem de Ferro (Iron Man)',
           editora: 'Marvel',
-          descricao: 'Victor von Doom, mais conhecido pelo alter ego Doutor Destino (no inglês: Doctor Doom), é um personagem fictício e supervilão que aparece nas histórias em quadrinhos publicadas pela Marvel Comics. Foi criado por Stan Lee e Jack Kirby, tendo sua primeira aparição na HQ Fantastic Four #5. Líder soberano de sua terra natal, a Latvéria, o Doutor Destino é considerado arqui-inimigo do Quarteto Fantástico, mas enfrenta constantemente outros heróis do Universo Marvel, como os Vingadores e o Homem-Aranha.',
-          link: 'https://pt.wikipedia.org/wiki/Doutor_Destino',
-          tags: 'vilão, cientista, magia'
+          descricao: 'Homem de Ferro, também conhecido como Tony Stark, é um bilionário inventor que usa uma armadura de alta tecnologia para combater o crime. Ele é membro dos Vingadores e seu principal inimigo é o Mandarim.',
+          tags: 'heroi, vingadores, armadura, tecnologia, inteligencia, inventor, genial, bilionário, mandarim'
         },
         {
-          heroi: 'X-Men',
+          heroi: 'Capitão América (Captain America)',
           editora: 'Marvel',
-          descricao: 'X-Men é uma equipe de super-heróis de histórias em quadrinhos épicas publicadas nos Estados Unidos pela Marvel Comics. Criados por Stan Lee e Jack Kirby, estrearam em The X-Men #1, publicada em setembro de 1963, e era formado inicialmente pelo Professor X, fundador da equipe, Ciclope, Fera, Homem de Gelo, Anjo e Garota Marvel (Jean Grey).',
-          link: 'https://pt.wikipedia.org/wiki/X-Men',
-          tags: 'mutante, equipe, heróis'
+          descricao: 'Capitão América, também conhecido como Steve Rogers, é um super-soldado que recebeu um soro experimental que o tornou fisicamente perfeito. Ele é membro dos Vingadores e seu principal inimigo é o Caveira Vermelha.',
+          tags: 'heroi, vingadores, supersoldado, patriotismo, escudo, vibranium, força, estratégia, caveira-vermelha'
         },
         {
-           heroi: 'Magneto',
-           editora: 'Marvel',
-           descricao: 'Magneto (Erik Magnus Lehnsherr, nascido Max Eisenhardt) é um personagem fictício do Universo Marvel, um supervilão criado e publicado pela editora Marvel Comics, sendo considerado um dos principais inimigos dos X-Men. Magneto é um mutante com enormes poderes de manipulação de campos magnéticos, além de controlar qualquer tipo de metal, incluindo o Adamantium. Embora pareça controlar a gravidade a seu bel prazer, na verdade Magneto precisa estar com vestimentas que possuam componentes metálicos, os quais seus poderes controlam: isso lhe dá efetivamente o poder de voar.',
-           link: 'https://pt.wikipedia.org/wiki/Magneto_(Marvel_Comics)',
-           tags: 'mutante, vilão, anti-herói'
+          heroi: 'Thor (Thor)',
+          editora: 'Marvel',
+          descricao: 'Thor é um deus asgardiano que possui força sobre-humana, voo, resistência e controla o clima. Ele é membro dos Vingadores e seu principal inimigo é Loki.',
+          tags: 'heroi, vingadores, asgardiano, deus, força, voo, resistencia, martelo, tempestades, loki'
         },
         {
-          heroi: 'Coringa',
+          heroi: 'Hulk (Hulk)',
+          editora: 'Marvel',
+          descricao: 'Hulk é um alter ego de Bruce Banner, que se transforma em um monstro verde de força colossal quando fica com raiva. Ele é membro dos Vingadores e seu principal inimigo é o General Ross.',
+          tags: 'heroi, vingadores, força, raiva, transformação, verde, monstro, general-ross, bruce-banner'
+        },
+        {
+          heroi: 'Pantera Negra (Black Panther)',
+          editora: 'Marvel',
+          descricao: 'Pantera Negra é o rei de Wakanda, uma nação africana tecnologicamente avançada. Ele possui força sobre-humana, velocidade, agilidade e usa um traje vibranium que o torna um combatente imbatível. Ele é membro dos Vingadores e seu principal inimigo é o Ulysses Klaw.',
+          tags: 'heroi, vingadores, wakanda, vibranium, rei, força, velocidade, agilidade, klaw, tecnologia'
+        },
+        {
+          heroi: 'Doutor Estranho (Doctor Strange)',
+          editora: 'Marvel',
+          descricao: 'Doutor Estranho é um cirurgião brilhante que, após um acidente, se torna um mestre das artes místicas. Ele usa seus poderes para proteger a Terra de ameaças mágicas. Ele é membro dos Vingadores e seu principal inimigo é Dormammu.',
+          tags: 'heroi, vingadores, magia, arte-mistica, cirurgião, feiticeiro, dormammu, olho-de-agamoto, dimensões'
+        },
+        {
+          heroi: 'Homem-Formiga (Ant-Man)',
+          editora: 'Marvel',
+          descricao: 'Homem-Formiga, também conhecido como Hank Pym ou Scott Lang, é um cientista que pode diminuir seu tamanho e controlar formigas. Ele é membro dos Vingadores e seu principal inimigo é o Homem-Formiga Amarelo.',
+          tags: 'heroi, vingadores, formigas, tamanho, ciência, diminuto, gigante, amarelo, pym, lang'
+        },
+        {
+          heroi: 'Viúva Negra (Black Widow)',
+          editora: 'Marvel',
+          descricao: 'Viúva Negra, também conhecida como Natasha Romanoff, é uma agente da S.H.I.E.L.D. e ex-assassina. Ela é uma mestre em espionagem, artes marciais e combate corpo-a-corpo. Ela é membro dos Vingadores e seu principal inimigo é o General Dreykov.',
+          tags: 'heroi, vingadores, espionagem, assassina, artes-marciais, combate, shiled, Dreykov, romanov, vingadora'
+        },
+        {
+          heroi: 'Gavião Arqueiro (Hawkeye)',
+          editora: 'Marvel',
+          descricao: 'Gavião Arqueiro, também conhecido como Clint Barton, é um mestre arqueiro que usa flechas especiais para combater o crime. Ele é membro dos Vingadores e seu principal inimigo é o Rei do Crime.',
+          tags: 'heroi, vingadores, arqueiro, flechas, estratégia, combate, vingador, clint-barton, rei-do-crime'
+        },
+        {
+          heroi: 'Mercúrio (Quicksilver)',
+          editora: 'Marvel',
+          descricao: 'Mercúrio, também conhecido como Pietro Maximoff, é um mutante com supervelocidade e reflexos. Ele é membro dos X-Men e seu principal inimigo é Magneto.',
+          tags: 'heroi, x-men, mutante, velocidade, reflexos, magneto, pietro-maximoff, vingador, quicksilver'
+        },
+        {
+          heroi: 'Feiticeira Escarlate (Scarlet Witch)',
+          editora: 'Marvel',
+          descricao: 'Feiticeira Escarlate, também conhecida como Wanda Maximoff, é uma mutante com poderes de manipulação de energia e probabilidade. Ela é membro dos Vingadores e seu principal inimigo é o Magneto.',
+          tags: 'heroi, vingadores, mutante, magia, energia, probabilidade, magneto, wanda-maximoff, caos, vingadora'
+        },
+        {
+          heroi: 'Visão (Vision)',
+          editora: 'Marvel',
+          descricao: 'Visão é um androide com poderes de densidade, voo e manipulação de energia. Ele é membro dos Vingadores e seu principal inimigo é Ultron.',
+          tags: 'heroi, vingadores, androide, densidade, voo, energia, ultron, vingador, inteligencia, sintezoide'
+        },
+        {
+          heroi: 'Demolidor (Daredevil)',
+          editora: 'Marvel',
+          descricao: 'Demolidor, também conhecido como Matt Murdock, é um advogado cego que possui sentidos sobre-humanos, incluindo a capacidade de "ver" usando o eco. Ele é um vigilante que luta contra o crime em Nova York e seu principal inimigo é o Rei do Crime.',
+          tags: 'heroi, vigilante, cego, sentidos, eco, advogado, nova-york, rei-do-crime, justiça, matt-murdock'
+        },
+        {
+          heroi: 'Punho de Ferro (Iron Fist)',
+          editora: 'Marvel',
+          descricao: 'Punho de Ferro, também conhecido como Danny Rand, aprendeu artes marciais e obteve o poder do Punho de Ferro ao entrar no coração de um dragão místico. Ele é um vigilante que luta contra o crime e seu principal inimigo é o Rei Dragão.',
+          tags: 'heroi, vigilante, artes-marciais, dragão, punho-de-ferro, danny-rand, rei-dragão, místico'
+        },
+        {
+          heroi: 'Justiceiro (Punisher)',
+          editora: 'Marvel',
+          editora: 'Marvel',
+          descricao: 'Justiceiro, também conhecido como Frank Castle, é um ex-militar que utiliza métodos violentos para combater o crime. Ele não tem poderes sobre-humanos, mas é um mestre em armas e táticas militares. Seu principal inimigo é o Rei do Crime.',
+          tags: 'anti-heroi, vigilante, armas, ex-militar, violência, vingança, frank-castle, rei-do-crime'
+        },
+        {
+          heroi: 'Ciclope (Cyclops)',
+          editora: 'Marvel',
+          descricao: 'Ciclope, também conhecido como Scott Summers, é um mutante que dispara raios ópticos de seus olhos. Ele é membro dos X-Men e seu principal inimigo é Magneto.',
+          tags: 'heroi, x-men, mutante, raios-opticos, lider, magneto, scott-summers, professor-x, vingador'
+        },
+        {
+          heroi: 'Tempestade (Storm)',
+          editora: 'Marvel',
+          descricao: 'Tempestade, também conhecida como Ororo Munroe, é uma mutante que controla o clima. Ela é membro dos X-Men e seu principal inimigo é Magneto.',
+          tags: 'heroi, x-men, mutante, clima, tempestades, ororo-munroe, magneto, x-men, controle'
+        },
+        {
+          heroi: 'Vampira (Rogue)',
+          editora: 'Marvel',
+          descricao: 'Vampira, também conhecida como Anna Marie, é uma mutante que pode absorver os poderes e memórias de outras pessoas ao tocar nelas. Ela é membro dos X-Men e seu principal inimigo é Magneto.',
+          tags: 'heroi, x-men, mutante, absorver-poderes, memórias, magneto, anna-marie, x-men, vingadora'
+        },
+        {
+          heroi: 'Homem de Gelo (Iceman)',
+          editora: 'Marvel',
+          descricao: 'Homem de Gelo, também conhecido como Bobby Drake, é um mutante que pode controlar e manipular o gelo. Ele é membro dos X-Men e seu principal inimigo é Magneto.',
+          tags: 'heroi, x-men, mutante, gelo, controle, bobbie-drake, magneto, x-men, vingador'
+        },
+        {
+          heroi: 'Fera (Beast)',
+          editora: 'Marvel',
+          descricao: 'Fera, também conhecido como Hank McCoy, é um mutante com superforça, velocidade, agilidade e inteligência. Ele é membro dos X-Men e seu principal inimigo é Magneto.',
+          tags: 'heroi, x-men, mutante, força, velocidade, agilidade, inteligencia, hank-mccoy, magneto, x-men'
+        },
+        {
+          heroi: 'Anjo (Angel)',
+          editora: 'Marvel',
+          descricao: 'Anjo, também conhecido como Warren Worthington III, é um mutante que pode voar e possui superforça. Ele é membro dos X-Men e seu principal inimigo é Magneto.',
+          tags: 'heroi, x-men, mutante, voo, força, warren-worthington, magneto, x-men, vingador'
+        },
+        {
+          heroi: 'Professor X (Professor X)',
+          editora: 'Marvel',
+          descricao: 'Professor X, também conhecido como Charles Xavier, é um mutante com telepatia e telecinese. Ele é o fundador dos X-Men e seu principal inimigo é Magneto.',
+          tags: 'heroi, x-men, mutante, telepatia, telecinese, charles-xavier, magneto, fundador, x-men, líder'
+        },
+        {
+          heroi: 'Magneto (Magneto)',
+          editora: 'Marvel',
+          descricao: 'Magneto é um mutante com a capacidade de controlar campos magnéticos. Ele é um dos principais inimigos dos X-Men, mas também tem sido um aliado em algumas ocasiões.',
+          tags: 'vilao, x-men, mutante, magnetismo, poder, controle, professor-x, ferro, metal, campos-magneticos'
+        },
+        {
+          heroi: 'Lanterna Verde (Green Lantern)',
           editora: 'DC Comics',
-          descricao: 'Arqui-inimigo do Batman, psicopata e anarquista.Arqui-inimigo do Batman, psicopata e anarquista. Um dos mais icónicos e reconhecidos personagens da cultura popular, o Joker tem sido citado como um dos maiores vilões e personagens da  já criados e "muito possivelmente mais interessante que o seu homólogo super-herói. A enorme popularidade da personagem já o fez aparecer numa grande variedade de produtos, como roupa e objetos de coleçõa, jogos, estruturas reais (como atracões de parques temáticos) e várias outras referências, além de ser o primeiro vilão a ter a sua própria série desenhada.',
-          link: 'https://pt.wikipedia.org/wiki/Joker_(DC_Comics)',
-          tags: 'vilão, psicopata, batman, joker'
+          descricao: 'Lanterna Verde é um membro do Corpo dos Lanternas Verdes, que usa um anel de poder para criar construções de energia verde. Cada Lanterna Verde tem um setor do universo para proteger. Hal Jordan é o Lanterna Verde da Terra, e seu principal inimigo é Sinestro.',
+          tags: 'heroi, lanterna-verde, anel-de-poder, energia, construções, hal-jordan, sinestro, corpo-dos-lanternas-verdes, setor'
         },
         {
-          heroi: 'Lanterna Verde',
+          heroi: 'Aquaman (Aquaman)',
           editora: 'DC Comics',
-          descricao: 'O Lanterna Verde atual foi lançado nos quadrinhos da década de 60, e também é conhecido como "O Lanterna Verde da Era de Prata". A inspiração foi a série literária Lensman de E. E. Smith.[1][2] A identidade do Lanterna Verde da Era de Prata, era a de , membro fundador da Liga da Justiça da América. Apesar do excelente trabalho do desenhista Gil Kane nesse período, era um personagem de super-herói relativamente genérico até que em 1970 a DC resolveu emparelhá-lo com o Arqueiro Verde (Oliver "Ollie" Queen), em uma série de quadrinhos absolutamente inovadora e de cunho social. Essa época ajudou a consolidar o novo Lanterna Verde como um herói popular, apesar das séries subsequentes abordarem temas mais cósmicos.',
-          link: 'https://pt.wikipedia.org/wiki/Lanterna_Verde',
-          tags: 'super-herói, alienígena, anel'
+          descricao: 'Aquaman é o rei de Atlântida e possui a capacidade de falar com os animais marinhos e respirar debaixo d´água. Ele é membro da Liga da Justiça e seu principal inimigo é o Rei Oceano.',
+          tags: 'heroi, liga-da-justica, atlântida, rei, mar, oceanos, peixes, trident, rei-oceano, respirar-debaixo-dagua'
         },
         {
-          heroi: 'Super Homem',
+          heroi: 'Flash (Flash)',
           editora: 'DC Comics',
-          descricao: 'É um dos mais importantes personagens da cultura pop ocidental, sendo o primeiro herói dos quadrinhos a ter uma revista intitulada com seu nome: Superman #1. Além disso, Superman foi licenciado e adaptado para diversas mídias, desde rádio até televisão e cinema.',
-          link: 'https://pt.wikipedia.org/wiki/Superman',
-          tags: 'super-herói, kryptoniano, justiça'
+          descricao: 'Flash, também conhecido como Barry Allen, possui supervelocidade, reflexos aprimorados e a capacidade de vibrar através de objetos sólidos. Ele é membro da Liga da Justiça e seu principal inimigo é o Professor Zoom.',
+          tags: 'heroi, liga-da-justica, velocidade, reflexos, vibrar, barry-allen, professor-zoom, velocista, força-da-velocidade'
         },
         {
-          heroi: 'Duende Verde',
+          heroi: 'Cyborg (Cyborg)',
           editora: 'DC Comics',
-          descricao: 'O Duende Verde é o alter-ego de Norman Osborn, um supervilão criado pelo escritor Stan Lee e pelo artista Steve Ditko, aparecendo pela primeira vez na revista The Amazing Spider-Man #14 (julho de 1964). O chefe industrial e amoral da Oscorp tomou uma fórmula que aprimorou as suas capacidades físicas e seu intelecto, mas também o levou à loucura. Ele adotou uma aparência temática do Halloween, vestindo-se com um traje de duende, montando em um planador com forma de morcego e usando um arsenal de armas de alta tecnologia, como granadas em formato de abóbora. O Duende Verde é o arqui-inimigo do Homem-Aranha.',
-          link: 'https://pt.wikipedia.org/wiki/Duende_Verde',
-          tags: 'vilão, cientista, louco'
+          descricao: 'Cyborg, também conhecido como Victor Stone, é um ciborgue com partes mecânicas e tecnologia avançada. Ele é membro da Liga da Justiça e seu principal inimigo é o Doutor Luz.',
+          tags: 'heroi, liga-da-justica, ciborgue, tecnologia, partes-mecânicas, victor-stone, doutor-luz, protheses, hacker'
+        },
+        {
+          heroi: 'Shazam (Shazam)',
+          editora: 'DC Comics',
+          descricao: 'Shazam, também conhecido como Billy Batson, é um garoto que pode se transformar em um super-herói adulto com a capacidade de controlar raios, superforça, velocidade e resistência. Seu principal inimigo é o Doutor Thaddeus Sivana.',
+          tags: 'heroi, criança, poder, raios, força, velocidade, resistencia, mago, shazam, billy-batson, siva'
+        },
+        {
+          heroi: 'Arqueiro Verde (Green Arrow)',
+          editora: 'DC Comics',
+          descricao: 'Arqueiro Verde, também conhecido como Oliver Queen, é um bilionário que usa seu arco e flechas para combater o crime. Ele é um mestre arqueiro e estrategista, e seu principal inimigo é o Conde Vértigo.',
+          tags: 'heroi, arco-e-flechas, vigilante, mestre-arqueiro, oliver-queen, conde-vertig, justiça, estratégia, tecnologia'
+        },
+        {
+          heroi: 'Caçador de Marte (Martian Manhunter)',
+          editora: 'DC Comics',
+          descricao: 'Caçador de Marte, também conhecido como Jonn Jonzz, é um alienígena de Marte com a capacidade de mudar de forma, telecinese, telepatia e invisibilidade. Ele é membro da Liga da Justiça e seu principal inimigo é o General Zod.',
+          tags: 'heroi, liga-da-justica, marciano, forma, telecinese, telepatia, invisibilidade, jonn-jonnz, general-zod, teletransporte'
         }
-];
+      ];
