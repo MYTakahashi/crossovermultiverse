@@ -34,7 +34,6 @@ function pesquisar(){
             </p>
             <p class="descricao-meta">${hero.descricao}
             </p>
-            <a href=${hero.link} target="_blank">Mais informações</a>
         </div>
         `
         }   
