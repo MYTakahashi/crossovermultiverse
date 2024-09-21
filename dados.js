@@ -215,5 +215,11 @@ let dados = [
           editora: 'DC Comics',
           descricao: 'Caçador de Marte, também conhecido como Jonn Jonzz, é um alienígena de Marte com a capacidade de mudar de forma, telecinese, telepatia e invisibilidade. Ele é membro da Liga da Justiça e seu principal inimigo é o General Zod.',
           tags: 'heroi, liga-da-justica, marciano, forma, telecinese, telepatia, invisibilidade, jonn-jonnz, general-zod, teletransporte'
+        },
+        {
+          heroi: 'Gambit (Gambit)',
+          editora: 'Marvel',
+          descricao: 'Gambit, também conhecido como Remy LeBeau, é um mutante com a capacidade de carregar objetos com energia cinética, tornando-os explosivos. Ele é um mestre ladrão e manipulador de cartas, usando seus poderes para realizar roubos e golpes. Gambit é membro dos X-Men e seu principal inimigo é o  Mr. Sinister.',
+          tags: 'heroi, x-men, mutante, energia-cinetica, cartas, ladrão, manipulador, roubo, mr-sinister, remy-lebeau'
         }
       ];
